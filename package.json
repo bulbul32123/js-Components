@@ -1,0 +1,11 @@
+{
+  "name": "jscomponents",
+  "version": "1.0.0",
+  "description": "JS Components is an open-source collection of high-quality components and templates built using **React.js, Next.js, HTML, CSS, and TailwindCSS**. These components are designed to be reusable, customizable, and developer-friendly for building modern web applications with efficiency and scalability.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
