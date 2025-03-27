@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-const DropdownMenu = ({ label, items }) => {
+const DropdownMenu = ({ title, items }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -26,7 +26,7 @@ const DropdownMenu = ({ label, items }) => {
   return (
     <div className="dropdown" ref={dropdownRef}>
       <button onClick={toggleDropdown} className="dropdown-trigger">
-        {label}
+        {title}
       </button>
       {isOpen && (
         <div className="dropdown-content">

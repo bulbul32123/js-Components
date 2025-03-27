@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { FaMoon } from "react-icons/fa";
+import { FaMoon, FaSearch } from "react-icons/fa";
 import { IoIosSunny } from "react-icons/io";
 import logo from '/Logo.svg';
 
 import Dropdown from './Dropdown';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -40,29 +41,30 @@ export default function Navbar() {
 
 
   return (
-    <nav className={`px-4 py-2 flex justify-between items-center  shadow-md`}>
+    <nav className={`px-4 py-1 flex justify-between items-center sticky top-0 border-b border-light dark:border-dark`}>
       {/* Logo */}
       <div>
-        <img src={logo} alt="logo" className='w-16 h-16' />
+        <img src={logo} alt="logo" className='w-12 h-12' />
       </div>
-
-      {/* Dropdowns */}
-      <div className="flex gap-4">
-        <Dropdown title="Components" items={components} />
-        <Dropdown title="Templates" items={templates} />
+      <div className="flex gap-4 items-center  text-dark dark:text-gray ">
+        <Link to='/components'>Components</Link>
+        <Link to='/templates'>Templates</Link>
       </div>
 
       {/* Search Bar, Dark Mode, Sign In */}
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-2 relative">
+        <span className='absolute text-lightGray dark:text-gray left-2 top-1/2 -translate-y-1/2 text-gray-500'>
+          <FaSearch />
+        </span>
         <input
           type="text"
           placeholder="Search..."
-          className="px-2 py-2 rounded-md text-sm dark:bg-[#1A1A1A] dark:text-gray focus:outline-none ring-green-500 focus:ring"
+          className="pl-8 pr-1 py-2 rounded-sm text-sm bg-light dark:bg-dark dark:text-gray outline-none border-none"
         />
-        <button onClick={toggleDarkMode} className="p-2 rounded-md">
-          {isDarkMode ? <IoIosSunny className="w-5 h-5" /> : <FaMoon className="w-5 h-5" />}
+        <button onClick={toggleDarkMode} className="p-2 rounded-sm bg-light dark:bg-dark">
+          {!isDarkMode ? <IoIosSunny className="w-5 h-5" /> : <FaMoon className="w-5 h-5" />}
         </button>
-        <button className="px-4 py-2 bg-[#6E3DFF] text-white rounded-md">Sign In</button>
+        <button className="px-5 py-2 bg-[#6E3DFF] text-white rounded-md">Sign In</button>
       </div>
     </nav>
   );
