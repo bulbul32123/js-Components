@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Trigger button */
+  .dropdown-trigger {
+    background-color: #f3f4f6;
+    color: #1f2937;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .dropdown-trigger:hover {
+    background-color: #e5e7eb;
+  }
+  
+  /* Dropdown content */
+  .dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    min-width: 12rem;
+    padding: 0.5rem 0;
+  }
+  
+  /* Dropdown items */
+  .dropdown-item {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #1f2937;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f3f4f6;
+  }
+  
