@@ -24,6 +24,8 @@ To use JS Components in your project, simply clone the repository:
 ```bash
 git clone https://github.com/bulbul32123/js-Components.git
 cd js-components
+npm i 
+npm run dev
 ```
 
 ## 🛠 Usage
