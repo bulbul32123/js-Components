@@ -1,6 +1,22 @@
-const express = require("express");
-const app = express();
+const express = require('express');
+const connectToMongoDB = require('./db/connectToMongoDB');
+require('dotenv').config();
 
-app.listen(3000, () => {
-  console.log("Server is running on port 3000");
+const app = express();
+const PORT = process.env.PORT || 5000;
+
+// Connect to MongoDB
+connectToMongoDB();
+
+// Middleware
+app.use(express.json());
+
+// Route: /api/testing
+app.get('/api/testing', (req, res) => {
+    res.json({ message: "Api is working" });
+});
+
+// Start Server
+app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
 });
