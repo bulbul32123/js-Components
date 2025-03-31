@@ -2,13 +2,16 @@
   "name": "jscomponents",
   "version": "1.0.0",
   "description": "JS Components is an open-source collection of high-quality components and templates built using **React.js, Next.js, HTML, CSS, and TailwindCSS**. These components are designed to be reusable, customizable, and developer-friendly for building modern web applications with efficiency and scalability.",
-  "main": "index.js",
+  "main": "backend",
   "scripts": {
-    "dev": "nodemon /backend/server.js"
+    "dev": "nodemon /server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.13.1",
     "nodemon": "^3.1.9"
   }
 }
