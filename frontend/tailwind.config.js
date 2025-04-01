@@ -20,7 +20,14 @@ export default {
         accent: "#333333",
         background: "#444444",
       },
-
+      screens: {
+        'sm': '640px',
+        'Smd':"716px",
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      },
     },
   },
   plugins: [],

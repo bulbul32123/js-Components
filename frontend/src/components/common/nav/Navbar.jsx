@@ -38,19 +38,24 @@ export default function Navbar() {
       </div>
 
       {/* Search Bar, Dark Mode, Sign In */}
-      <div className="flex items-center gap-2 relative">
-        <span className='absolute text-lightGray dark:text-gray left-2 top-1/2 -translate-y-1/2 text-gray-500'>
-          <FaSearch />
-        </span>
-        <input
-          type="text"
-          placeholder="Search..."
-          className="pl-8 pr-1 py-2 rounded-sm text-sm bg-light dark:bg-dark dark:text-gray outline-none border-none"
-        />
+      <div className="flex items-center gap-1.5 md:gap-2 relative">
+        <div className="relative md:inline-block hidden">
+          <span className='absolute text-lightGray dark:text-gray left-2 top-1/2 -translate-y-1/2 text-gray-500'>
+            <FaSearch />
+          </span>
+          <input
+            type="text"
+            placeholder="Search"
+            className="pl-8 pr-1 py-2 rounded-sm text-sm bg-light dark:bg-dark dark:text-white outline-none border-none"
+          />
+        </div>
+        <button className="p-2 rounded-sm bg-light dark:bg-dark md:hidden">
+          <FaSearch className="w-5 h-5"/>
+        </button>
         <button onClick={toggleDarkMode} className="p-2 rounded-sm bg-light dark:bg-dark">
           {!isDarkMode ? <IoIosSunny className="w-5 h-5" /> : <FaMoon className="w-5 h-5" />}
         </button>
-        <Link to='/register' className="px-5 py-2 bg-[#6E3DFF] text-white rounded-md">Sign In</Link>
+        <Link to='/register' className="px-3 md:px-5 py-2 bg-[#6E3DFF] text-white rounded-md">Sign In</Link>
       </div>
     </nav>
   );
