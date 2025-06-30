@@ -9,6 +9,8 @@ import HomePage from './pages/HomePage';
 import NotFound from './pages/NotFound';
 import RegisterPage from './pages/RegisterPage';
 import LoginPage from './pages/LoginPage';
+
+
 export default function App() {
   const location = useLocation();
   const hideNavbarFooter = location.pathname === '/login';
@@ -24,7 +26,6 @@ export default function App() {
         <Route path='/login' element={<LoginPage />} />
         <Route path='/register' element={<RegisterPage />} />
         <Route path='*' element={<NotFound />} />
-
       </Routes>
       {!hideNavbarFooter && <Footer />}
     </div>

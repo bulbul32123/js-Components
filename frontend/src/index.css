@@ -7,8 +7,6 @@
   position: relative;
   display: inline-block;
 }
-
-
 .dropdown-trigger {
   background-color: #f3f4f6;
   color: #1f2937;
@@ -35,7 +33,6 @@
   min-width: 12rem;
   padding: 0.5rem 0;
 }
-
 .dropdown-item {
   display: block;
   padding: 0.5rem 1rem;
@@ -43,7 +40,6 @@
   text-decoration: none;
   transition: background-color 0.2s;
 }
-
 .dropdown-item:hover {
   background-color: #f3f4f6;
 }

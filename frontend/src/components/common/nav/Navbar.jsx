@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { FaMoon, FaSearch } from "react-icons/fa";
 import { IoIosSunny } from "react-icons/io";
 import logo from '/Logo.svg';
-
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
@@ -28,7 +27,6 @@ export default function Navbar() {
 
   return (
     <nav className={`px-4 py-1 flex justify-between items-center sticky top-0 border-b border-light dark:border-dark`}>
-      {/* Logo */}
       <Link to='/'>
         <img src={logo} alt="logo" className='w-12 h-12' />
       </Link>
@@ -36,8 +34,6 @@ export default function Navbar() {
         <Link to='/components'>Components</Link>
         <Link to='/templates'>Templates</Link>
       </div>
-
-      {/* Search Bar, Dark Mode, Sign In */}
       <div className="flex items-center gap-1.5 md:gap-2 relative">
         <div className="relative md:inline-block hidden">
           <span className='absolute text-lightGray dark:text-gray left-2 top-1/2 -translate-y-1/2 text-gray-500'>
