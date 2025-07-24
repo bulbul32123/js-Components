@@ -9,7 +9,7 @@ export default function Hero() {
           Build your Own <span className='text-yellow font-bold bg-black leading-[1.5] px-3 rounded-md'>Components</span>
         </h1>
         <p className="text-gray-500 max-md:px-7 -pt-5 leading-6 flex items-center gap-1 flex-wrap justify-center">
-          A set of beautifully-designed, accessible components and an <Ai /> to Generate yours Components.
+          A set of beautifully-designed, accessible components and an <Ai /> to Generate yours Component.
         </p>
         <div className="flex justify-center items-center gap-4 mt-4">
           <button className="px-3 md:px-5 py-2 bg-black text-white dark:hover:underline rounded-md ">Components</button>
