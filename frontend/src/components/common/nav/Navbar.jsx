@@ -33,8 +33,8 @@ export default function Navbar() {
         <img src={logo} alt="logo" className='w-12 h-12' />
       </Link>
       <div className="flex gap-4 items-center  text-dark dark:text-gray ">
-        <Link to='/components'>Component</Link>
-        <Link to='/templates'>Template</Link>
+        <Link to='/components'>Components</Link>
+        <Link to='/templates'>Templates</Link>
       </div>
 
       {/* Search Bar, Dark Mode, Sign In */}
