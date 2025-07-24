@@ -55,7 +55,7 @@ export default function Navbar() {
         <button onClick={toggleDarkMode} className="p-2 rounded-sm bg-light dark:bg-dark">
           {!isDarkMode ? <IoIosSunny className="w-5 h-5" /> : <FaMoon className="w-5 h-5" />}
         </button>
-        <Link to='/register' className="px-3 md:px-5 py-2 bg-[#6E3DFF] text-white rounded-md">Sign In</Link>
+        <Link to='/register' className="px-3 md:px-5 py-2 bg-[#6E3DFF] text-white rounded-md">SignIn</Link>
       </div>
     </nav>
   );
