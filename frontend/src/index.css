@@ -3,14 +3,12 @@
 @tailwind utilities;
 
 
-/* Dropdown container */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
 
-/* Trigger button */
 .dropdown-trigger {
   background-color: #f3f4f6;
   color: #1f2937;
@@ -25,7 +23,6 @@
   background-color: #e5e7eb;
 }
 
-/* Dropdown content */
 .dropdown-content {
   position: absolute;
   top: 100%;
@@ -39,7 +36,6 @@
   padding: 0.5rem 0;
 }
 
-/* Dropdown items */
 .dropdown-item {
   display: block;
   padding: 0.5rem 1rem;
